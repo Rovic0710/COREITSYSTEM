@@ -1,4 +1,5 @@
 import logo from "../assets/Images/core-logo.png"
+import setting from "../assets/icons/settings.png"
 
 export default function Navbar() {
     return (
@@ -13,7 +14,10 @@ export default function Navbar() {
                 </div>
                 
                 <div className="flex flex-row-reverse mr-4">
-                    Hello
+                    <div>
+                        <img src={setting} alt="" className="h-8 w-8 flex items-center space-x-2"/>
+                    </div>
+                    
                 </div>
             </nav>
         </header>
