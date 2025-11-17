@@ -7,7 +7,7 @@ export default function Navbar() {
             <nav className="grid grid-cols-2">
                 <div className="flex items-center space-x-2">
                     <img src={logo} alt="" className="h-10 w-10 object-contain"/>
-                    <div className="flex">
+                    <div className="hidden md:flex justify-center font-bold whitespace-nowrap">
                         <p className="font-bold">COREIT</p>
                         <p className="font-normal">SYSTEM</p>
                     </div>
@@ -15,7 +15,8 @@ export default function Navbar() {
                 
                 <div className="flex flex-row-reverse mr-4">
                     <div>
-                        <img src={setting} alt="" className="h-8 w-8 flex items-center space-x-2"/>
+                        <img src={setting} alt="Settings" className="h-8 w-8 flex items-center space-x-2 animate-spin"
+                         style={{ animationDuration: '10s' }} onClick={() => {console.log("Hello");}}/>
                     </div>
                     
                 </div>
