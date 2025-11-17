@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <div className="flex">
         <Sidebar />
-        <div>
+        <div className="bg-zinc-300 w-screen">
           {/* Navigation Button of Sidebar */}
           <Routes>
             <Route path="/" element={<Home/>}/>
@@ -27,7 +27,6 @@ function App() {
             <Route path="/Inventory" element={<Inventory/>}/>
           </Routes>
         </div>
-        
       </div>
     </Router>
   );
